@@ -28,7 +28,7 @@ export default function Overview() {
         <p className="bg-background">
           This bootcamp is for anyone aiming to sharpen their problem-solving
           skills and succeed in <strong>technical interviews</strong>.
-          Through weekly hands-on sessions, you'll build coding confidence,
+          Through weekly hands-on sessions, you’ll build coding confidence,
           master <strong>algorithms and data structures</strong>, and tackle real
           problems from <em>LeetCode</em> and <em>HackerRank</em>.
         </p>
@@ -64,7 +64,7 @@ export default function Overview() {
             shadow-[inset_0_0_0_2px_#c69b66] border-2 border-[#c69b66] rounded-lg
           "
         >
-          <h3 className="py-4 text-2xl whitespace-nowrap">- What you'll learn -</h3>
+          <h3 className="py-4 text-2xl whitespace-nowrap">- What you’ll learn -</h3>
           {topics.map((topic) => (
             <div key={topic.title}>
               <div>
@@ -94,7 +94,7 @@ export default function Overview() {
           community of collaborative learners.
         </p>
         <p className="bg-background">
-          By the end, you'll have a solid foundation in computer science and the
+          By the end, you’ll have a solid foundation in computer science and the
           confidence to succeed in the tech job market.
         </p>
       </div>
