@@ -6,6 +6,8 @@ import { BuildingOffice2Icon } from "@heroicons/react/24/outline";
 export default function Speakers() {
   return (
     <section className="flex flex-col items-center justify-start gap-14 w-full relative">
+      <div id="speakers" className="absolute top-0 -translate-y-6 lg:-translate-y-20"></div>
+
       <Image
         src="/hats.png"
         alt=""

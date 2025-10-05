@@ -6,6 +6,8 @@ import { BuildingOffice2Icon } from "@heroicons/react/24/outline";
 export default function Organizers() {
   return (
     <section className="flex flex-col items-center justify-center gap-14 w-full relative">
+      <div id="organizers" className="absolute top-0 -translate-y-6 lg:-translate-y-20"></div>
+
       <Image
         src="/table.png"
         alt=""

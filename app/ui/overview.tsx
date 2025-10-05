@@ -5,6 +5,8 @@ import { SectionTitle } from "@/app/ui/section-title";
 export default function Overview() {
   return (
     <section className="flex flex-col items-center justify-center gap-14 w-full relative">
+      <div id="overview" className="absolute top-0 -translate-y-6 lg:-translate-y-20"></div>
+
       <SectionTitle text="overview"/>
 
       <div className="flex flex-col md:flex-row items-start self-start md:self-center gap-3 text-neutral-900">
