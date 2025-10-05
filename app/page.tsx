@@ -1,5 +1,6 @@
 import Header from "@/app/ui/header";
 import Overview from "@/app/ui/overview";
+import Organizers from "@/app/ui/organizers";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         bg-[length:120px_120px]
       ">
         <Overview />
+        <Organizers />
       </main>
     </>
   );

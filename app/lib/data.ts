@@ -15,3 +15,22 @@ export const topics = [
   { title: "Advanced techniques", items: ["Modified Binary Search", "Backtracking", "Subsets", "Greedy"] },
   { title: "Dynamic Programming patterns" },
 ];
+
+interface PersonInfo {
+  name: string;
+  job_title?: string;
+  company?: string;
+}
+
+export const organizers: PersonInfo[] = [
+  {
+    name: "Arman Jafarnezhad",
+    job_title: "Software Engineer",
+    company: "EvenUp, Ex-Kijiji",
+  },
+  {
+    name: "Yasaman Parhizkar",
+    job_title: "Data Scientist",
+    company: "RBC Royal Bank",
+  },
+];
