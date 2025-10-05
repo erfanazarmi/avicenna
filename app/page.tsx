@@ -1,6 +1,7 @@
 import Header from "@/app/ui/header";
 import Overview from "@/app/ui/overview";
 import Organizers from "@/app/ui/organizers";
+import Speakers from "@/app/ui/speakers";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       ">
         <Overview />
         <Organizers />
+        <Speakers />
       </main>
     </>
   );

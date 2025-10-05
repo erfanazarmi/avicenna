@@ -34,3 +34,65 @@ export const organizers: PersonInfo[] = [
     company: "RBC Royal Bank",
   },
 ];
+
+export const speakers: PersonInfo[] = [
+  {
+    name: "Bardia Doosti",
+    job_title: "Senior Machine Learning Engineer",
+    company: "Google",
+  },
+  {
+    name: "Amin Bashiri",
+    company: "Lyft",
+  },
+  {
+    name: "Amin Fadaeinejad",
+    company: "Huawei",
+  },
+  {
+    name: "Arash Afkanpour",
+    company: "Ex Google",
+  },
+  {
+    name: "Sana Ayromlou",
+    company: "Google",
+  },
+  {
+    name: "Mehdi Zamani",
+    company: "Google",
+  },
+  {
+    name: "Faezeh Khabbaz",
+    job_title: "VP",
+    company: "RBC Global Security",
+  },
+  {
+    name: "Yasamin Niknam",
+    company: "Shopify",
+  },
+  {
+    name: "Narges Fallahi",
+    job_title: "Staff Engineer",
+    company: "League",
+  },
+  {
+    name: "Ahmad Pourihosseini",
+    job_title: "Software Engineer",
+    company: "Instacart",
+  },
+  {
+    name: "Mehrdad Malekmohammadi",
+    job_title: "Quantum Compiler Developer",
+    company: "Xanadu",
+  },
+  {
+    name: "Saeedeh Moghimi",
+    job_title: "MLOps Software Engineer",
+    company: "Genentech",
+  },
+  {
+    name: "Reyhaneh Ghoreishi",
+    job_title: "AI Engineer",
+    company: "Google",
+  },
+];
