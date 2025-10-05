@@ -30,9 +30,9 @@ export default function Organizers() {
             <div className="p-4">
               <p className="text-lg font-semibold">{organizer.name}</p>
               <p className="text-gray-700 dark:text-gray-400">{organizer.job_title}</p>
-              <div className="flex items-center pt-2 gap-1">
-                <BuildingOffice2Icon className="w-4 text-gray-500" />
-                <p>{organizer.company}</p>
+              <div className="flex items-start pt-2 gap-1">
+                <BuildingOffice2Icon className="w-4 flex-shrink-0 text-gray-500" />
+                <p className="leading-none">{organizer.company}</p>
               </div>
             </div>
           </div>

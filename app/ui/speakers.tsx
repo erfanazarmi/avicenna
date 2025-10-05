@@ -39,9 +39,9 @@ export default function Speakers() {
               <div className="px-4">
                 <p className="font-semibold">{speaker.name}</p>
                 <p className="text-gray-700 dark:text-gray-400">{speaker.job_title}</p>
-                <div className="flex items-center pt-2 gap-1">
-                  <BuildingOffice2Icon className="w-4 text-gray-500" />
-                  <p>{speaker.company}</p>
+                <div className="flex items-start pt-2 gap-1">
+                  <BuildingOffice2Icon className="w-4 flex-shrink-0 text-gray-500" />
+                  <p className="leading-none">{speaker.company}</p>
                 </div>
               </div>
             </div>
