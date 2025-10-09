@@ -17,14 +17,16 @@ export default function Speakers() {
 
       <SectionTitle text="speakers"/>
 
-      <div className="flex justify-center items-center gap-10">
-        <Image
-          src="/horn-1.png"
-          alt=""
-          width={160}
-          height={160}
-          className="2xl:flex-1 hidden 2xl:block self-start mt-60"
-        />
+      <div className="flex justify-center items-center gap-14">
+        <div className="2xl:flex-1 hidden 2xl:block self-start mt-60">
+          <Image
+            src="/horn-1.png"
+            alt=""
+            width={160}
+            height={160}
+            className="float-right"
+          />
+        </div>
 
         <div className="2xl:flex-4 grid lg:grid-cols-2 gap-6 lg:gap-10 rounded-xl">
           {speakers.map((speaker) => (
@@ -48,13 +50,14 @@ export default function Speakers() {
           ))}
         </div>
 
-        <Image
-          src="/horn-2.png"
-          alt=""
-          width={240}
-          height={240}
-          className="2xl:flex-1 hidden 2xl:block self-end mb-60"
-        />
+        <div className="2xl:flex-1 hidden 2xl:block self-end mb-60">
+          <Image
+            src="/horn-2.png"
+            alt=""
+            width={400}
+            height={400}
+          />
+        </div>
       </div>
     </section>
   );
