@@ -15,7 +15,7 @@ export default function Footer() {
         </div>
         <div>Designed & Developed by</div>
         <a
-          href="https://github.com/erfanazarmi"
+          href="https://www.linkedin.com/in/erfanazarmi"
           target="_blank"
           className="underline underline-offset-3"
         >
