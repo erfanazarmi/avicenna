@@ -8,7 +8,7 @@ export default function Header() {
           <div className="absolute bottom-0 left-0 w-full h-32 sm:h-60 bg-gradient-to-b from-transparent to-background"></div>
         </div>
         <div className="transition -translate-y-10 space-y-6 px-10">
-          <h1 className="text-center font-cinzel text-5xl sm:text-6xl font-medium leading-none text-[#b88f4a] dark:text-[#f2c464]">
+          <h1 className="text-center font-cinzel text-5xl sm:text-6xl font-medium leading-none text-gold-dark dark:text-[#f2c464]">
             Avicenna
             <br />
             Academy
