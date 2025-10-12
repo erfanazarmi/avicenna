@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function Menu() {
@@ -15,6 +15,16 @@ export default function Menu() {
   const stopPropagation = (e: React.MouseEvent) => {
     e.stopPropagation();
   };
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > window.innerHeight);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -53,7 +63,16 @@ export default function Menu() {
           </nav>
         </div>
       )}
-      <nav className="hidden lg:flex items-center justify-center gap-10 fixed top-0 z-100 w-full p-4 text-gray-200 bg-navy shadow-xl/20">
+      <nav
+        className={`
+          ${scrolled
+            ? "bg-black/90"
+            : "bg-black/45"
+          }
+          transition-all duration-[1500ms] ease-in-out
+          hidden lg:flex items-center justify-center gap-10 fixed top-0 z-100 w-full p-3 text-gray-200 shadow-xl/20
+        `}
+        >
         {items.map((item, index) => (
           <div
             key={item.title}
