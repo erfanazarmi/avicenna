@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { organizers } from "@/app/lib/data";
 import { SectionTitle } from "@/app/ui/section-title";
-import { BuildingOffice2Icon } from "@heroicons/react/24/outline";
 
 export default function Organizers() {
   return (
@@ -20,19 +19,63 @@ export default function Organizers() {
       <div className="flex flex-col lg:flex-row items-center justify-center gap-10 w-full">
         {organizers.map((organizer) => (
           <div
-            key={organizer.name}
+            key={organizer.last_name}
             className="
               flex flex-col lg:flex-row w-full max-w-[540px] lg:h-[240px] p-6
               bg-white dark:bg-[#131336] shadow-xl/20 rounded-xl
             "
           >
             <div className="aspect-square w-full lg:w-auto lg:h-full lg:mr-4 rounded-md bg-gray-300"></div>
-            <div className="p-4">
-              <p className="text-lg font-semibold">{organizer.name}</p>
-              <p className="text-gray-700 dark:text-gray-400">{organizer.job_title}</p>
-              <div className="flex items-start pt-2 gap-1">
-                <BuildingOffice2Icon className="w-4 flex-shrink-0 text-gray-500" />
-                <p className="leading-none">{organizer.company}</p>
+            <div className="w-full pt-4 lg:pt-0 lg:pl-4">
+              <div className="space-y-1 w-full">
+                <div className="text-lg font-semibold [word-spacing:0.1em]">
+                  {`${organizer.first_name} ${organizer.last_name}`}
+                </div>
+                <div className="text-gray-700 dark:text-gray-400">
+                  {organizer.job_title}
+                </div>
+              </div>
+              <div className="space-y-4 mt-4 p-1 pt-4 border-t-1 border-gray-300 dark:border-gray-700">
+                {organizer.companies
+                  ?.sort((a, b) => {
+                    const aEx = a.is_previous ? 1 : 0;
+                    const bEx = b.is_previous ? 1 : 0;
+                    return aEx - bEx;
+                  })
+                  .map((company, index) => (
+                    <div key={index} className="flex items-center gap-3">
+                      {company.logo &&
+                        (company.logo.dark ? (
+                          <>
+                            <Image
+                              src={company.logo.light}
+                              alt=""
+                              width={20}
+                              height={20}
+                              className="dark:hidden"
+                            />
+                            <Image
+                              src={company.logo.dark}
+                              alt=""
+                              width={20}
+                              height={20}
+                              className="hidden dark:block"
+                            />
+                          </>
+                        ) : (
+                          <Image
+                            src={company.logo.light}
+                            alt=""
+                            width={20}
+                            height={20}
+                          />
+                        ))}
+                      <p className="leading-none font-medium">
+                        <span>{company.is_previous ? "Ex " : ""}</span>
+                        {company.name}
+                      </p>
+                    </div>
+                  ))}
               </div>
             </div>
           </div>

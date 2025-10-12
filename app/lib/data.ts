@@ -17,82 +17,183 @@ export const topics = [
 ];
 
 interface PersonInfo {
-  name: string;
+  first_name: string;
+  last_name: string;
   job_title?: string;
-  company?: string;
+  companies?: {
+    name: string;
+    logo?: {light: string; dark?: string};
+    is_previous?: boolean;
+  }[];
 }
 
 export const organizers: PersonInfo[] = [
   {
-    name: "Arman Jafarnezhad",
+    first_name: "Arman",
+    last_name: "Jafarnezhad",
     job_title: "Software Engineer",
-    company: "EvenUp, Ex-Kijiji",
+    companies: [
+      {
+        name: "Kijiji",
+        logo: { light: "/company-logos/kijiji-light.png", dark: "/company-logos/kijiji-dark.png" },
+        is_previous: true
+      },
+      {
+        name: "EvenUp",
+        logo: { light: "/company-logos/evenup.png" }
+      }
+    ]
   },
   {
-    name: "Yasaman Parhizkar",
+    first_name: "Yasaman",
+    last_name: "Parhizkar",
     job_title: "Data Scientist",
-    company: "RBC Royal Bank",
+    companies: [
+      {
+        name: "RBC Royal Bank",
+        logo: { light: "/company-logos/rbc.png" }
+      }
+    ]
   },
 ];
 
 export const speakers: PersonInfo[] = [
   {
-    name: "Bardia Doosti",
+    first_name: "Bardia",
+    last_name: "Doosti",
     job_title: "Senior Machine Learning Engineer",
-    company: "Google",
+    companies: [
+      {
+        name: "Google",
+        logo: { light: "/company-logos/google.png" }
+      }
+    ]
   },
   {
-    name: "Amin Bashiri",
-    company: "Lyft",
+    first_name: "Amin",
+    last_name: "Bashiri",
+    companies: [
+      {
+        name: "Lyft",
+        logo: { light: "/company-logos/lyft.png" }
+      }
+    ]
   },
   {
-    name: "Amin Fadaeinejad",
-    company: "Huawei",
+    first_name: "Amin",
+    last_name: "Fadaeinejad",
+    companies: [
+      {
+        name: "Huawei",
+        logo: { light: "/company-logos/huawei.png" }
+      }
+    ]
   },
   {
-    name: "Arash Afkanpour",
-    company: "Ex Google",
+    first_name: "Arash",
+    last_name: "Afkanpour",
+    companies: [
+      {
+        name: "Google",
+        logo: { light: "/company-logos/google.png" },
+        is_previous: true
+      }
+    ]
   },
   {
-    name: "Sana Ayromlou",
-    company: "Google",
+    first_name: "Sana",
+    last_name: "Ayromlou",
+    companies: [
+      {
+        name: "Google",
+        logo: { light: "/company-logos/google.png" }
+      }
+    ]
   },
   {
-    name: "Mehdi Zamani",
-    company: "Google",
+    first_name: "Mehdi",
+    last_name: "Zamani",
+    companies: [
+      {
+        name: "Google",
+        logo: { light: "/company-logos/google.png" }
+      }
+    ]
   },
   {
-    name: "Faezeh Khabbaz",
+    first_name: "Faezeh",
+    last_name: "Khabbaz",
     job_title: "VP",
-    company: "RBC Global Security",
+    companies: [
+      {
+        name: "RBC Global Security",
+        logo: { light: "/company-logos/rbc.png" }
+      }
+    ]
   },
   {
-    name: "Yasamin Niknam",
-    company: "Shopify",
+    first_name: "Yasamin",
+    last_name: "Niknam",
+    companies: [
+      {
+        name: "Shopify",
+        logo: { light: "/company-logos/shopify.png" }
+      }
+    ]
   },
   {
-    name: "Narges Fallahi",
+    first_name: "Narges",
+    last_name: "Fallahi",
     job_title: "Staff Engineer",
-    company: "League",
+    companies: [
+      {
+        name: "League",
+        logo: { light: "/company-logos/league.png" }
+      }
+    ]
   },
   {
-    name: "Ahmad Pourihosseini",
+    first_name: "Ahmad",
+    last_name: "Pourihosseini",
     job_title: "Software Engineer",
-    company: "Instacart",
+    companies: [
+      {
+        name: "Instacart",
+        logo: { light: "/company-logos/instacart.png" }
+      }
+    ]
   },
   {
-    name: "Mehrdad Malekmohammadi",
+    first_name: "Mehrdad",
+    last_name: "Malekmohammadi",
     job_title: "Quantum Compiler Developer",
-    company: "Xanadu",
+    companies: [
+      {
+        name: "Xanadu",
+        logo: { light: "/company-logos/xanadu-light.png", dark: "/company-logos/xanadu-dark.png" }
+      }
+    ]
   },
   {
-    name: "Saeedeh Moghimi",
+    first_name: "Saeedeh",
+    last_name: "Moghimi",
     job_title: "MLOps Software Engineer",
-    company: "Genentech",
+    companies: [
+      {
+        name: "Genentech",
+        logo: { light: "/company-logos/genentech.png" }
+      }
+    ]
   },
   {
-    name: "Reyhaneh Ghoreishi",
+    first_name: "Reyhaneh",
+    last_name: "Ghoreishi",
     job_title: "AI Engineer",
-    company: "Google",
+    companies: [
+      {
+        name: "Google",
+        logo: { light: "/company-logos/google.png" }
+      }
+    ]
   },
 ];

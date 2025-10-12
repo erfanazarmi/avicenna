@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { speakers } from "@/app/lib/data";
 import { SectionTitle } from "@/app/ui/section-title";
-import { BuildingOffice2Icon } from "@heroicons/react/24/outline";
 
 export default function Speakers() {
   return (
@@ -28,23 +27,72 @@ export default function Speakers() {
           />
         </div>
 
-        <div className="2xl:flex-4 grid lg:grid-cols-2 gap-6 lg:gap-10 rounded-xl">
+        <div className="2xl:flex-3 grid lg:grid-cols-2 gap-6 lg:gap-10 rounded-xl">
           {speakers.map((speaker) => (
             <div
-              key={speaker.name}
+              key={speaker.last_name}
               className="
-                flex w-full max-w-[500px] h-full p-4
+                w-full max-w-[460px] p-4
                 bg-white dark:bg-[#131336] shadow-xl/20 rounded-xl
               "
             >
-              <div className="aspect-square h-[100px] rounded-md bg-gray-300"></div>
-              <div className="px-4">
-                <p className="font-semibold">{speaker.name}</p>
-                <p className="text-gray-700 dark:text-gray-400">{speaker.job_title}</p>
-                <div className="flex items-start pt-2 gap-1">
-                  <BuildingOffice2Icon className="w-4 flex-shrink-0 text-gray-500" />
-                  <p className="leading-none">{speaker.company}</p>
+              <div className="flex">
+                <div className="aspect-square h-[100px] rounded-md bg-gray-300 flex-shrink-0"></div>
+                <div className="space-y-1 w-full p-1 pl-4">
+                  <div className="font-semibold [word-spacing:0.1em]">
+                    {speaker.first_name}
+                    {" "}<br className="sm:hidden" />
+                    {speaker.last_name}
+                  </div>
+                  <div className="text-sm text-gray-700 dark:text-gray-400">
+                    {speaker.job_title}
+                  </div>
                 </div>
+              </div>
+              <div className="space-y-4 mt-4 p-1 pt-4 border-t-1 border-gray-300 dark:border-gray-700">
+                {speaker.companies
+                  ?.sort((a, b) => {
+                    const aEx = a.is_previous ? 1 : 0;
+                    const bEx = b.is_previous ? 1 : 0;
+                    return aEx - bEx;
+                  })
+                  .map((company, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center gap-2"
+                    >
+                      {company.logo &&
+                        (company.logo.dark ? (
+                          <>
+                            <Image
+                              src={company.logo.light}
+                              alt=""
+                              width={20}
+                              height={20}
+                              className="dark:hidden"
+                            />
+                            <Image
+                              src={company.logo.dark}
+                              alt=""
+                              width={20}
+                              height={20}
+                              className="hidden dark:block"
+                            />
+                          </>
+                        ) : (
+                          <Image
+                            src={company.logo.light}
+                            alt=""
+                            width={20}
+                            height={20}
+                          />
+                        ))}
+                      <p className="leading-none font-medium">
+                        <span>{company.is_previous ? "Ex " : ""}</span>
+                        {company.name}
+                      </p>
+                    </div>
+                  ))}
               </div>
             </div>
           ))}
