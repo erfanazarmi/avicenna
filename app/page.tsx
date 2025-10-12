@@ -11,12 +11,7 @@ export default function Home() {
     <>
       <Menu />
       <Header />
-      <main className="
-        flex flex-col items-center gap-30 px-10 py-20
-        bg-[radial-gradient(circle,rgba(0,0,0,0.3)_2px,transparent_2px)]
-        dark:bg-[radial-gradient(circle,rgba(255,255,255,0.2)_2px,transparent_2px)]
-        bg-[length:120px_120px]
-      ">
+      <main className="flex flex-col items-center gap-30 px-10 py-20">
         <Overview />
         <Organizers />
         <Speakers />
