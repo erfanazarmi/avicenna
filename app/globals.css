@@ -4,7 +4,8 @@
   --background: #f6f6f6;
   --foreground: #171717;
   --navy: #0b0059;
-  --gold: #f2c464;
+  --gold: #eaca73;
+  --gold-dark: #b88f4a;
 }
 
 @theme inline {
@@ -12,6 +13,7 @@
   --color-foreground: var(--foreground);
   --color-navy: var(--navy);
   --color-gold: var(--gold);
+  --color-gold-dark: var(--gold-dark);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-cinzel: var(--font-cinzel);
