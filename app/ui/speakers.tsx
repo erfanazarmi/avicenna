@@ -17,7 +17,7 @@ export default function Speakers() {
       <SectionTitle text="speakers"/>
 
       <div className="flex justify-center items-center gap-14">
-        <div className="2xl:flex-1 hidden 2xl:block self-start mt-60">
+        <div className="2xl:flex-1 hidden 2xl:block self-start mt-80">
           <Image
             src="/horn-1.png"
             alt=""
@@ -98,7 +98,7 @@ export default function Speakers() {
           ))}
         </div>
 
-        <div className="2xl:flex-1 hidden 2xl:block self-end mb-60">
+        <div className="2xl:flex-1 hidden 2xl:block self-end mb-110">
           <Image
             src="/horn-2.png"
             alt=""
