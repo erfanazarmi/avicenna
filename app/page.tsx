@@ -15,8 +15,8 @@ export default function Home() {
         <Overview />
         <Organizers />
         <Speakers />
-        <Location />
       </main>
+      <Location />
       <Footer />
     </>
   );
