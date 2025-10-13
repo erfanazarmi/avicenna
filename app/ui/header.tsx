@@ -3,11 +3,11 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header className="flex flex-col items-center">
-      <div className="flex flex-col justify-end items-center h-dvh w-full text-center">
+      <div className="flex flex-col justify-end items-center h-screen w-full text-center">
         <div className="relative w-full flex-1 bg-[url('/header.png')] bg-no-repeat bg-cover bg-center bg-transparent">
-          <div className="absolute bottom-0 left-0 w-full h-32 sm:h-60 bg-gradient-to-b from-transparent to-background"></div>
+          <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-background"></div>
         </div>
-        <div className="transition -translate-y-10 space-y-6 px-10">
+        <div className="transition -translate-y-10 space-y-6 px-10 pb-12 md:pb-0">
           <h1 className="text-center font-cinzel text-5xl sm:text-6xl font-medium leading-none text-gold-dark dark:text-[#f2c464]">
             Avicenna
             <br />
