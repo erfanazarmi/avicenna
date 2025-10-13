@@ -15,7 +15,7 @@ export default function Overview() {
           return (
             <div
               key={item.label}
-              className="flex items-center justify-center gap-2 px-3 py-2 w-auto rounded-lg bg-gold"
+              className="flex items-center justify-center gap-2 px-3 py-2 w-auto rounded-lg bg-gold text-sm sm:text-base"
             >
               <Icon className="w-5 text-neutral-800" />
               <p className="whitespace-nowrap">{item.value}</p>
