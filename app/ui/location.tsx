@@ -15,7 +15,7 @@ export default function Location() {
 
       <div
         className="
-          flex items-start justify-center w-full h-[80vh] rounded-md
+          flex items-start justify-center w-full h-150 sm:h-200 rounded-md
           bg-[url('/trinity-college-toronto.jpg')] bg-cover bg-no-repeat bg-center
         "
       >
