@@ -40,19 +40,20 @@ export default function Overview() {
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-8 w-full max-w-[1000px]">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:my-8 w-full max-w-[1000px]">
         <div className="flex-1 flex justify-end lg:self-start">
           <Image
-            src="/student.png"
+            src="/rock-and-tree-1.png"
+            alt=""
+            width={140}
+            height={140}
+            className="transform -translate-y-14 hidden lg:block"
+          />
+          <Image
+            src="/iris.png"
             alt=""
             width={120}
             height={120}
-          />
-          <Image
-            src="/tree-2.png"
-            alt=""
-            width={150}
-            height={150}
             className="lg:hidden"
           />
         </div>
@@ -77,10 +78,18 @@ export default function Overview() {
 
         <div className="flex-1 lg:self-end">
           <Image
-            src="/tree-1.png"
+            src="/rock-and-tree-2.png"
             alt=""
             width={180}
             height={180}
+            className="hidden lg:block"
+          />
+          <Image
+            src="/tree-2.png"
+            alt=""
+            width={180}
+            height={180}
+            className="lg:hidden"
           />
         </div>
       </div>

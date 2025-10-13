@@ -23,7 +23,7 @@ export default function Header() {
       </div>
       <div className="flex items-center mt-10 px-10">
         <Image
-          src="/tree-3.png"
+          src="/tree-1.png"
           alt=""
           width={240}
           height={240}
