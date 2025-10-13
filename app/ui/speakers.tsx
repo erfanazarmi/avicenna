@@ -33,7 +33,7 @@ export default function Speakers() {
               key={speaker.last_name}
               className="
                 w-full max-w-[460px] p-4
-                bg-white dark:bg-[#131336] shadow-xl/20 rounded-xl
+                bg-white dark:bg-[#1c1c42] shadow-xl/20 rounded-xl
               "
             >
               <div className="flex">

@@ -22,7 +22,7 @@ export default function Organizers() {
             key={organizer.last_name}
             className="
               flex flex-col lg:flex-row w-full max-w-[540px] lg:h-[240px] p-6
-              bg-white dark:bg-[#131336] shadow-xl/20 rounded-xl
+              bg-white dark:bg-[#1c1c42] shadow-xl/20 rounded-xl
             "
           >
             <div className="aspect-square w-full lg:w-auto lg:h-full lg:mr-4 rounded-md bg-gray-300"></div>
