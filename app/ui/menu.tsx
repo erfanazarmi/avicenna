@@ -39,7 +39,7 @@ export default function Menu() {
       {isMenuOpen && (
         <div
           onClick={() => setIsMenuOpen(false)}
-          className="lg:hidden fixed top-0 left-0 z-100 min-h-dvh w-full bg-black/50"
+          className="lg:hidden fixed top-0 left-0 z-100 h-screen w-full bg-black/50"
         >
           <nav
             onClick={stopPropagation}
