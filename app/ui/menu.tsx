@@ -43,7 +43,7 @@ export default function Menu() {
         >
           <nav
             onClick={stopPropagation}
-            className="fixed top-0 left-0 z-100 w-full p-5 flex flex-col gap-5 text-gray-200 bg-navy"
+            className="fixed top-0 left-0 z-100 w-full p-5 flex flex-col gap-5 text-gray-200 bg-black/85"
           >
             <button
               onClick={() => setIsMenuOpen(false)}
