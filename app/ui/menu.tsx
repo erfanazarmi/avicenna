@@ -8,6 +8,7 @@ export default function Menu() {
     { title: "Overview", href: "#overview" },
     { title: "Organizers", href: "#organizers" },
     { title: "Speakers", href: "#speakers" },
+    { title: "Location", href: "#location" },
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);

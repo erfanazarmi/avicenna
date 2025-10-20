@@ -3,7 +3,9 @@ import { SectionTitle } from "@/app/ui/section-title";
 
 export default function Location() {
   return (
-    <section className="flex flex-col items-center justify-center gap-10 p-3 sm:px-20 pb-10 sm:pb-20 w-full">
+    <section className="flex flex-col items-center justify-center gap-10 p-3 sm:px-20 pb-10 sm:pb-20 w-full relative">
+      <div id="location" className="absolute top-0 -translate-y-6 lg:-translate-y-20"></div>
+
       <Image
         src="/flag.png"
         alt=""
